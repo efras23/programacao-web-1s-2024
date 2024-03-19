@@ -33,13 +33,13 @@ function verificarNumeroPrimo(n){
     console.log(`${n_primo}`)
 }
 
-verificarNumeroPrimo(0)
-verificarNumeroPrimo(1)
-verificarNumeroPrimo(2)
-verificarNumeroPrimo(3)
-verificarNumeroPrimo(7)
-verificarNumeroPrimo(83)
-verificarNumeroPrimo(100)
-verificarNumeroPrimo(991)
-verificarNumeroPrimo(104729)
-verificarNumeroPrimo(14348907)
+verificarNumeroPrimo(0)        //false
+verificarNumeroPrimo(1)        //false
+verificarNumeroPrimo(2)        //true
+verificarNumeroPrimo(3)        //true
+verificarNumeroPrimo(7)        //true
+verificarNumeroPrimo(83)       //true
+verificarNumeroPrimo(100)      //false
+verificarNumeroPrimo(991)      //true
+verificarNumeroPrimo(104729)   //true
+verificarNumeroPrimo(14348907) //false
