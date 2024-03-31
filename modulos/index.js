@@ -1,25 +1,5 @@
-//aproveitando código do professor da atividade3
-//to só acompanhando a aula agora...
-function transporMatriz(A){
-    let matrizString = '';
-    for(let i = 0; i < A.length; i++){
-        for(let j = 0; j < A[i].length; j++){
-            matrizString += A[i][j] + ' ';
-        }
-        matrizString += '\n';
-    }
-    console.log(matrizString);
-
-    let matrizTranspostaString = '';
-    for(let j = 0; j < A[0].length; j++){
-        for(let i = 0; i < A.length; i++){
-            matrizTranspostaString += A[i][j] + ' ';
-        }
-        matrizTranspostaString += '\n';
-    }
-    console.log(matrizTranspostaString);
-
-}
+const matriz_util = require("./util/matriz_util.js")
+const calc = require("./util/calc.js")
 
 const A = [
             [1, 2], 
@@ -27,4 +7,5 @@ const A = [
             [5, 6]
         ];
 
-transporMatriz(A);
+matriz_util.transporMatriz(A)
+calc.calculadora(3,0.333,"*")
