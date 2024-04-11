@@ -19,15 +19,16 @@ function listarProdutos(){
 }
 
 function removerProduto(id){
+    //função arrow
     produtos.filter((p) => {
-        let id = req.params.id
-        estoque.removerProduto(id)
-        res.send(id)
-    }) //função arrow
+        let x = p.id != id
+        return x
+    })
 }
 
 module.exports = {
     criarProduto,
     adicionarProduto,
-    listarProdutos
+    listarProdutos,
+    removerProduto
 }
