@@ -25,8 +25,7 @@ app.get("/adicionar/:id/:nome/:qtd", function(req,res){
 app.get("/remover/:id", function(req,res){
     let id = Number(req.params.id)
     estoque.remover(id)
-    res.send(id)
-    //DANDO ERRO
+    res.send("Produto removido.")
 })
 
 //editar quantidade do produto

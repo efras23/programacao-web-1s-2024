@@ -14,7 +14,7 @@ function adicionar(id, nome, qtd){
 }
 
 function remover(id){
-    produtos.filter((prod) => {
+    produtos = produtos.filter((prod) => {
         let x = prod.id != id
         return x
     }) 
