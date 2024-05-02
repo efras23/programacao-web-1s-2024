@@ -10,12 +10,20 @@
 <body>
     <div class="container mt-5">
         <h2>Dados do Formulário</h2>
-        <ul>
-            <li>Nome: {{nome}}</li>
-            <li>Endereço: {{endereco}}</li>
-            <li>Telefone: {{telefone}}</li>
-            <li>Data de agendamento: {{dataAgendamento}}</li>
-        </ul>
+        <table class="table table-bordered">
+            <tr class="text-center">
+                <th>Nome</th>
+                <th>Endereço</th>
+                <th>Telefone</th>
+                <th>Data de Agendamento</th>
+            </tr>
+            <tr class="text-center">
+                <td><span class="text-success">{{nome}}</td>
+                <td><span class="text-success">{{endereco}}</td>
+                <td><span class="text-success">{{telefone}}</td>
+                <td><span class="text-success">{{dataAgendamento}}</td>
+            </tr>
+        </table>
     </div>
 </body>
 </html>
