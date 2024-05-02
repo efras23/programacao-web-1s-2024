@@ -12,6 +12,11 @@ app.get("/", function(req, res){
     res.render("index.html")
 })
 
+app.get("/:nome", function(req, res){
+    const nome = req.params.nome
+    res.render("index.html", {nome})
+})
+
 app.get("/contato", function(req, res){
     res.render("contato.html")
 })
